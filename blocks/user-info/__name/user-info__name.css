@@ -1,0 +1,7 @@
+.user-info__name {
+  margin: 0;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 56px;
+  display: inline-block;
+}
