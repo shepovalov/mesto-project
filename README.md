@@ -1,5 +1,6 @@
 # Проект: Место
 
+* [Ссылка на проект: shepovalov.github.io/mesto-project](https://shepovalov.github.io/mesto-project/)
 ### Обзор
 
 * Figma
