@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
-    <div class="root">
+    <main class="root">
         <header class="header root__section">
           <img src="./images/logo.svg" alt="mesto logo" class="logo">
         </header>
@@ -28,51 +28,62 @@
         <ul class="places-list root__section">
             <li class="place-card">
                 <img src="./images/castle.jpg" alt="Карачаевск" class="place-card__image">
-                <h2 class="place-card__name">Карачаевск</h2>
-                <button class="">
-                    <img src="./images/heart.svg" alt="Лайк" class="place-card__like-icon">
-                </button>
+                <div class="place-card__description">
+                    <h2 class="place-card__name">Карачаевск</h2>
+                    <button class="place-card__like-icon"></button>
+                </div>
             </li>
             <li class="place-card">
                 <img src="./images/mountians.jpg" alt="Гора Эльбрус" class="place-card__image">
+                <div class="place-card__description">
                     <h2 class="place-card__name">Гора Эльбрус</h2>
-                <button class="">
-                    <img src="./images/heart.svg" alt="Лайк" class="place-card__like-icon">
-                </button>
+                    <button class="place-card__like-icon"></button>
+                </div>
             </li>
             <li class="place-card">
                 <img src="./images/sunshine.jpg" alt="Домбай" class="place-card__image">
+                <div class="place-card__description">
                     <h2 class="place-card__name">Домбай</h2>
-                <button class="">
-                    <img src="./images/heart.svg" alt="Лайк" class="place-card__like-icon">
-                </button>
+                    <button class="place-card__like-icon"></button>
+                </div>
             </li>
             <li class="place-card">
                 <img src="./images/castle.jpg" alt="Гора Эльбрус" class="place-card__image">
+                <div class="place-card__description">
                     <h2 class="place-card__name">Гора Эльбрус</h2>
-                <button class="">
-                    <img src="./images/heart.svg" alt="Лайк" class="place-card__like-icon">
-                </button>
+                    <button class="place-card__like-icon"></button>
+                </div>
             </li>
             <li class="place-card">
                 <img src="./images/mountians.jpg" alt="Домбай" class="place-card__image">
+                <div class="place-card__description">
                     <h2 class="place-card__name">Домбай</h2>
-                <button class="">
-                    <img src="./images/heart.svg" alt="Лайк" class="place-card__like-icon">
-                </button>
+                    <button class="place-card__like-icon"></button>
+                </div>
             </li>
             <li class="place-card">
                 <img src="./images/sunshine.jpg" alt="Карачаевск" class="place-card__image">
+                <div class="place-card__description">
                     <h2 class="place-card__name">Карачаево-Ч...</h2>
-                <button class="">
-                    <img src="./images/heart.svg" alt="Лайк" class="place-card__like-icon">
-                </button>
+                    <button class="place-card__like-icon"></button>
+                </div>
             </li>
         </ul>
     
         <footer class="footer root__section">
           <p class="copyright">© 2021 Shepovalov D</p>
         </footer>
+      </main>
+      <div class="popup">
+        <div class="popup__content">
+          <img src="./images/close.svg" alt="" class="popup__close">
+          <h3 class="popup__title">Редактировать профиль</h3>
+          <form class="popup__form" name="new">
+              <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя">
+              <input type="text" name="link" class="popup__input popup__input_type_link-url" placeholder="Био">
+              <button type="" class="button popup__button">Сохранить</button>
+          </form>
+        </div>
       </div>
 </body>
 </html>
