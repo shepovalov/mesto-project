@@ -11,7 +11,6 @@
 .place-card__like-icon:focus,
 .place-card__like-icon:active {
   background-image: url(../../../images/like-active.svg);
-  /* background-color: #000; */
 }
 
 .place-card__like-icon:hover {
