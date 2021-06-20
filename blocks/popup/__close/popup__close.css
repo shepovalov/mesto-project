@@ -4,4 +4,16 @@
   top: -26px;
   right: -26px;
   cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.popup__close:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 980px) {
+  .popup__close {
+    right: 0;
+    top: -38px;
+  }
 }
