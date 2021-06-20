@@ -3,80 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mesto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Место</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
-    <main class="root">
+    <div class="root">
         <header class="header root__section">
-          <img src="./images/logo.svg" alt="mesto logo" class="logo">
+          <img src="./images/logo.svg" alt="Логотип место" class="logo">
         </header>
-        <div class="profile root__section">
+        <section class="profile root__section">
           <div class="user-info">
             <div class="user-info__photo"></div>
             <div class="user-info__data">
               <div class="user-info__name">
                 <h1 class="user-info__header">Жак-Ив Кусто</h1>
-                <button type="button" class="button user-info__edit-button"></button>
+                <button type="button" aria-label="Edit" class="button user-info__edit-button"></button>
               </div>
               <p class="user-info__job">Исследователь океана</p>
             </div>
           </div>
-          <button type="button" class="button user-info__button"></button>
-        </div>
+          <button type="button" aria-label="Close" class="button user-info__button"></button>
+        </section>
         <ul class="places-list root__section">
             <li class="place-card">
                 <img src="./images/castle.jpg" alt="Карачаевск" class="place-card__image">
                 <div class="place-card__description">
                     <h2 class="place-card__name">Карачаевск</h2>
-                    <button type="button" class="place-card__like-icon"></button>
+                    <button type="button" aria-label="Like" class="place-card__like-icon"></button>
                 </div>
             </li>
             <li class="place-card">
                 <img src="./images/mountians.jpg" alt="Гора Эльбрус" class="place-card__image">
                 <div class="place-card__description">
                     <h2 class="place-card__name">Гора Эльбрус</h2>
-                    <button type="button" class="place-card__like-icon"></button>
+                    <button type="button" aria-label="Like" class="place-card__like-icon"></button>
                 </div>
             </li>
             <li class="place-card">
                 <img src="./images/sunshine.jpg" alt="Домбай" class="place-card__image">
                 <div class="place-card__description">
                     <h2 class="place-card__name">Домбай</h2>
-                    <button type="button" class="place-card__like-icon"></button>
+                    <button type="button" aria-label="Like" class="place-card__like-icon"></button>
                 </div>
             </li>
             <li class="place-card">
                 <img src="./images/castle.jpg" alt="Гора Эльбрус" class="place-card__image">
                 <div class="place-card__description">
                     <h2 class="place-card__name">Гора Эльбрус</h2>
-                    <button type="button" class="place-card__like-icon"></button>
+                    <button type="button" aria-label="Like" class="place-card__like-icon"></button>
                 </div>
             </li>
             <li class="place-card">
                 <img src="./images/mountians.jpg" alt="Домбай" class="place-card__image">
                 <div class="place-card__description">
                     <h2 class="place-card__name">Домбай</h2>
-                    <button type="button" class="place-card__like-icon"></button>
+                    <button type="button" aria-label="Like" class="place-card__like-icon"></button>
                 </div>
             </li>
             <li class="place-card">
                 <img src="./images/sunshine.jpg" alt="Карачаевск" class="place-card__image">
                 <div class="place-card__description">
                     <h2 class="place-card__name">Карачаево-Черкесия</h2>
-                    <button type="button" class="place-card__like-icon"></button>
+                    <button type="button" aria-label="Like" class="place-card__like-icon"></button>
                 </div>
             </li>
         </ul>
         <footer class="footer root__section">
           <p class="copyright">© 2021 Shepovalov D</p>
         </footer>
-      </main>
+      </div>
       <div class="popup">
         <div class="popup__content">
-          <img src="./images/close.svg" alt="" class="popup__close">
-          <h3 class="popup__title">Редактировать профиль</h3>
+          <button class="button popup__close" aria-label="Close popup"></button>
+          <h2 class="popup__title">Редактировать профиль</h3>
           <form class="popup__form" name="new">
               <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя">
               <input type="text" name="link" class="popup__input popup__input_type_link-url" placeholder="Био">
