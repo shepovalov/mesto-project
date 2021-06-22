@@ -2,3 +2,9 @@
   font-size: 18px;
   color: #545454;
 }
+
+@media screen and (max-width: 980px) {
+  .copyright {
+    margin: 0;
+  }
+}
