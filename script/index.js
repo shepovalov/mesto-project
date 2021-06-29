@@ -16,7 +16,9 @@ closeBtn.addEventListener('click', () => {
     popup.classList.remove('popup_open');
 });
 
-popupNameInput.setAttribute('placeholder', userName.textContent);
-popupJobInput.setAttribute('placeholder', userJob.textContent);
+popupNameInput.setAttribute('value', userName.textContent);
+popupJobInput.setAttribute('value', userJob.textContent);
+
+
 
 
