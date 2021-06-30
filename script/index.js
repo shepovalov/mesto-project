@@ -1,3 +1,32 @@
+const formElement = document.querySelector('.popup__form')
+
+const initialCards = [
+    {
+      name: 'Архыз',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+    },
+    {
+      name: 'Челябинская область',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+    },
+    {
+      name: 'Иваново',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+    },
+    {
+      name: 'Камчатка',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+    },
+    {
+      name: 'Холмогорский район',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+    },
+    {
+      name: 'Байкал',
+      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+    }
+  ]; 
+
 let editBtn = document.querySelector('.user-info__edit-button');
 let closeBtn = document.querySelector('.popup__close');
 let popup = document.querySelector('.popup');
@@ -19,6 +48,11 @@ closeBtn.addEventListener('click', () => {
 popupNameInput.setAttribute('value', userName.textContent);
 popupJobInput.setAttribute('value', userJob.textContent);
 
+function formSubmitHandler (evt) {
+    evt.preventDefault();
 
+    userName.textContent = popupNameInput.value;
+    userJob.textContent =  popupJobInput.value;  
+}
 
-
+formElement.addEventListener('submit', formSubmitHandler);
